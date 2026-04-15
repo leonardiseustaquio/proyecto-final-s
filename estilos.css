@@ -1,0 +1,75 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #76a5ca; /*Fondo de pagina*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.contenedor {
+  background: #ca5858;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(235, 52, 11, 0.886);
+  width: 350px; 
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#mensaje-exito, #mensaje-login {
+  margin-top: 15px;
+  color: rgb(47, 203, 47);
+  font-weight: bold;
+  display: none;
+}
+
+.contenedor {
+  background: #ca2c2c;
+  background-image: linear-gradient(to top, #f0f4f8, #ffffff);
+  box-shadow: 0 4px 15px rgba(209, 104, 104, 0.1);
+}

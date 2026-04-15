@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reporte de Pruebas Automatizadas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    .seccion {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #007bff;
+    }
+
+    .paso {
+      margin: 10px 0;
+      padding-left: 10px;
+      border-left: 3px solid #007bff;
+    }
+
+    img {
+      max-width: 450px;
+      display: block;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      
+    }
+
+    .resultado {
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Reporte de Pruebas Automatizadas con Selenium</h1>
+
+  <div class="seccion">
+    <h2> Prueba 1: Registro de Usuario</h2>
+    <div class="paso">
+      <p><strong>Paso 1:</strong> Se abre el formulario de registro.</p>
+      <p> Resultado esperado: Pagina cargada correctamente.</p>
+
+      <img src="captura1_inicio_registro.png" alt="Inicio Registro">
+    </div>
+
+    <div class="paso">
+      <p><strong>Paso 2:</strong> Se ingresan datos validos (nombre, correo, contraseña).</p>
+      <p> Resultado esperado: Los campos son completados sin errores.</p>
+ 
+      <img src="captura2_datos_registro.png" alt="Datos Registro">
+    </div>
+
+    <div class="paso">
+      <p><strong>Paso 3:</strong> Se hace clic en “Registrarse”.</p>
+      <p> Resultado esperado: Aparece el mensaje “Registro exitoso”.</p>
+
+      <img src="captura3_registro_exitoso.png" alt="Registro Exitoso">
+    </div>
+  </div>
+
+  <div class="seccion">
+    <h2> Prueba 2: Inicio de Sesión</h2>
+    <div class="paso">
+      <p><strong>Paso 1:</strong> Se abre la página de login.</p>
+      <p>Resultado esperado: Página cargada correctamente.</p>
+
+      <img src="captura4_inicio_login.png" alt="Inicio Login">
+    </div>
+
+    <div class="paso">
+      <p><strong>Paso 2:</strong> Se ingresan las credenciales correctas.</p>
+      <p> Resultado esperado: Los campos son completados sin errores.</p>
+
+      <img src="captura5_datos_login.png" alt="Datos Login">
+    </div>
+
+    <div class="paso">
+      <p><strong>Paso 3:</strong> Se hace clic en “Ingresar”.</p>
+      <p> Resultado esperado: Aparece el mensaje “Inicio de sesión exitoso”.</p>
+      <img src="captura6_login_exitoso.png" alt="Login Exitoso">
+    </div>
+  </div>
+
+  <div class="seccion">
+    <h2> Resumen Final</h2>
+    <p class="resultado"> Todas las pruebas automatizadas se ejecutaron correctamente.</p>
+  </div>
+</body>
+</html>

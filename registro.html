@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Formulario de Registro</h1>
+  <form id="form-registro">
+    <label for="nombre">Nombre:</label><br />
+    <input type="text" id="nombre" name="nombre"><br />
+
+    <label for="correo">Correo Electrónico:</label><br />
+    <input type="email" id="correo" name="correo"><br />
+
+    <label for="contrasena">Contraseña:</label><br />
+    <input type="password" id="contrasena" name="contrasena"><br /><br />
+
+    <button type="submit" id="btn-registrarse">Registrarse</button>
+  </form>
+
+  <p id="mensaje-exito" style="color: green; display: none;"> Registro exitoso</p>
+
+  <script>
+    document.getElementById('form-registro').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById('nombre').value;
+      const correo = document.getElementById('correo').value;
+      const contrasena = document.getElementById('contrasena').value;
+
+      if (nombre && correo.includes('@') && contrasena.length >= 6) {
+        document.getElementById('mensaje-exito').style.display = 'block';
+      } else {
+        alert('coloca nombre y recuerda contraseña de 6 o mas caracteres');
+      }
+    });
+  </script>
+</body>
+</html>

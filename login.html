@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="form-login">
+    <label for="correo">Correo:</label><br />
+    <input type="email" id="correo" name="correo"><br />
+
+    <label for="contrasena">Contraseña:</label><br />
+    <input type="password" id="contrasena" name="contrasena"><br /><br />
+
+    <button type="submit" id="btn-login">Ingresar</button>
+  </form>
+
+  <p id="mensaje-login" style="color: green; display: none;"> Inicio de sesión exitoso</p>
+
+  <script>
+    document.getElementById('form-login').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const correo = document.getElementById('correo').value;
+      const contrasena = document.getElementById('contrasena').value;
+
+      
+      if (correo === 'ana@gmail.com' && contrasena === 'clave123') {
+        document.getElementById('mensaje-login').style.display = 'block';
+      } else {
+        alert('Credenciales incorrectas.');
+      }
+    });
+  </script>
+</body>
+</html>
