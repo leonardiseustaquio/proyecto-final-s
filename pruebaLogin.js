@@ -7,7 +7,7 @@ async function pruebaLogin() {
   await driver.get('file://' + __dirname + '/login.html');
 await tomarCaptura(driver, 'captura4_inicio_login.png');
 
-await driver.findElement(By.id('correo')).sendKeys('ana@gmail.com');
+await driver.findElement(By.id('correo')).sendKeys('leonardis@gmail.com');
 await driver.findElement(By.id('contrasena')).sendKeys('clave123');
 await tomarCaptura(driver, 'captura5_datos_login.png');
 

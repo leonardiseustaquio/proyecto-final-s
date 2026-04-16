@@ -7,8 +7,8 @@ async function pruebaRegistro() {
   await driver.get('file://' + __dirname + '/registro.html');
 await tomarCaptura(driver, 'captura1_inicio_registro.png');
 
-await driver.findElement(By.id('nombre')).sendKeys('Ana Torres');
-await driver.findElement(By.id('correo')).sendKeys('ana@gmail.com');
+await driver.findElement(By.id('nombre')).sendKeys('Leonardis Eustaquio');
+await driver.findElement(By.id('correo')).sendKeys('leonardis@gmail.com');
 await driver.findElement(By.id('contrasena')).sendKeys('clave123');
 await tomarCaptura(driver, 'captura2_datos_registro.png');
 
